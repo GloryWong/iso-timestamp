@@ -1,0 +1,66 @@
+{
+  "name": "iso-timestamp",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Generate ISO 8601 timestamp: YYYYMMDDhhmmssSSS",
+  "author": {
+    "name": "Glory Wong",
+    "email": "glorywong1001@gmail.com",
+    "url": "https://glorywong.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/GloryWong/iso-timestamp#readme",
+  "repository": "github:Glory Wong/iso-timestamp",
+  "bugs": "https://github.com/GloryWong/iso-timestamp/issues",
+  "keywords": [
+    "timestamp",
+    "datetime",
+    "date",
+    "time",
+    "format",
+    "generator",
+    "utility",
+    "typescript",
+    "javascript",
+    "iso8601",
+    "chrono",
+    "time-stamp"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm test && pnpm build",
+    "prepare": "pnpm simple-git-hooks",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "test": "vitest",
+    "coverage": "vitest run --coverage.enabled"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@tsconfig/node18": "^18.2.4",
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "eslint": "^9.8.0",
+    "lint-staged": "^15.2.8",
+    "simple-git-hooks": "^2.11.1",
+    "type-fest": "^4.23.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm commitlint --edit ${1}",
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
+  }
+}
