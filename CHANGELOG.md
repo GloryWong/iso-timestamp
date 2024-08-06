@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/GloryWong/iso-timestamp/compare/v1.0.1...v1.1.0) (2024-08-06)
+
+
+### Features
+
+* support options as the first parameter ([d8bb36c](https://github.com/GloryWong/iso-timestamp/commit/d8bb36c295fb4a1dd94e524607664529edd94b8a))
+
 ## [1.0.1](https://github.com/GloryWong/iso-timestamp/compare/v1.0.0...v1.0.1) (2024-08-06)
 
 
