@@ -36,7 +36,7 @@ pnpm add iso-timestamp
 
 ### API
 
-* `timestamp([date], [options])`
+#### `timestamp(options?)` or `timestamp(date, options?)`
 
   * `date`: customized date
 
@@ -51,14 +51,14 @@ import timestamp from 'iso-timestamp'
 timestamp()
 // return current timestamp: 202408070101123
 
-timestamp(new Date('2050-03-04T12:03:04.123'))
-// return customized timestamp: 20500304120304123
-
-timestamp(undefined, { excludeMillisecond: true })
+timestamp({ excludeMillisecond: true })
 // return timestamp with millisecond excluded: 202408070101
 
-timestamp(undefined, { excludeTime: true })
+timestamp({ excludeTime: true })
 // return timestamp with time excluded: 20240807
+
+timestamp(new Date('2050-03-04T12:03:04.123'), { excludeMillisecond: true })
+// return customized timestamp: 20500304120304
 ```
 
 ## Authors

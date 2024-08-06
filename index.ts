@@ -11,7 +11,21 @@ export interface Options {
   excludeMillisecond?: boolean
 }
 
-export function timestamp(date = new Date(), options: Options = {}) {
+export function timestamp(options?: Options): string
+export function timestamp(date: Date, options?: Options): string
+export function timestamp(dateOrOptions?: Date | Options, optionsOrUndefined?: Options) {
+  let date: Date
+  let options: Options
+
+  if (dateOrOptions instanceof Date) {
+    date = dateOrOptions
+    options = optionsOrUndefined ?? {}
+  }
+  else {
+    date = new Date()
+    options = dateOrOptions ?? {}
+  }
+
   const { excludeTime = false, excludeMillisecond = false } = options
 
   const year = String(date.getFullYear())
