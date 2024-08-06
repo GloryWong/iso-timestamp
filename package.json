@@ -1,7 +1,7 @@
 {
   "name": "iso-timestamp",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate ISO 8601 timestamp: YYYYMMDDhhmmssSSS",
   "author": {
     "name": "Glory Wong",
