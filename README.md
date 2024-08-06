@@ -12,7 +12,7 @@
 ![NPM Downloads](https://img.shields.io/npm/dw/iso-timestamp)
 ![Node Current](https://img.shields.io/node/v/iso-timestamp)
 
-# templates
+# iso-timestamp
 
 Generate ISO 8601 timestamp: YYYYMMDDhhmmssSSS
 
