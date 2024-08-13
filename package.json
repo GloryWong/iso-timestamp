@@ -49,7 +49,7 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@tsconfig/node18": "^18.2.4",
-    "@types/node": "18.19.44",
+    "@types/node": "20.14.15",
     "@vitest/coverage-istanbul": "^2.0.5",
     "eslint": "^9.9.0",
     "lint-staged": "^15.2.8",
