@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/GloryWong/iso-timestamp/compare/v1.1.0...v1.2.0) (2024-08-26)
+
+
+### Features
+
+* support custom separator ([30dd6af](https://github.com/GloryWong/iso-timestamp/commit/30dd6afa7c99f1edfd2ac02f71e9ea19ddcf8789))
+
 ## [1.1.0](https://github.com/GloryWong/iso-timestamp/compare/v1.0.1...v1.1.0) (2024-08-06)
 
 
