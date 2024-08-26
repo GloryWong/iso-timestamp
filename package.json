@@ -45,13 +45,13 @@
     "coverage": "vitest run --coverage.enabled"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.26.0",
+    "@antfu/eslint-config": "^2.27.1",
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@tsconfig/node18": "^18.2.4",
     "@types/node": "18.19.45",
     "@vitest/coverage-istanbul": "^2.0.5",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "lint-staged": "^15.2.9",
     "simple-git-hooks": "^2.11.1",
     "type-fest": "^4.25.0",
