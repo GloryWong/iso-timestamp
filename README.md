@@ -38,11 +38,12 @@ pnpm add iso-timestamp
 
 #### `timestamp(options?)` or `timestamp(date, options?)`
 
-  * `date`: customized date
+  * `date`: Custom date
 
   * options:
-    * `excludeTime`: Exclude time, i.e. hour, minute and second. Default: false
-    * `excludeMillisecond`: Exclude millisecond from time. Default: false
+    * `excludeTime`: Exclude time, i.e. hour, minute and second. *Default: false*
+    * `excludeMillisecond`: Exclude millisecond from time. *Default: false*
+    * `separator`: Separator among elements of the timestamp. *Default: ''*
 
 ```typescript
 import timestamp from 'iso-timestamp'
@@ -58,7 +59,10 @@ timestamp({ excludeTime: true })
 // return timestamp with time excluded: 20240807
 
 timestamp(new Date('2050-03-04T12:03:04.123'), { excludeMillisecond: true })
-// return customized timestamp: 20500304120304
+// return timestamp with custom Date: 20500304120304
+
+timestamp({ separator: '-', excludeTime: true })
+// return timestamp with custom separator: 2024-08-07
 ```
 
 ## Authors

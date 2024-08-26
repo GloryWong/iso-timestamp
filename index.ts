@@ -9,6 +9,10 @@ export interface Options {
    * @default false
    */
   excludeMillisecond?: boolean
+  /**
+   * Separator among elements of the timestamp
+   */
+  separator?: string
 }
 
 export function timestamp(options?: Options): string
@@ -26,7 +30,7 @@ export function timestamp(dateOrOptions?: Date | Options, optionsOrUndefined?: O
     options = dateOrOptions ?? {}
   }
 
-  const { excludeTime = false, excludeMillisecond = false } = options
+  const { excludeTime = false, excludeMillisecond = false, separator = '' } = options
 
   const year = String(date.getFullYear())
   const month = String(date.getMonth() + 1).padStart(2, '0')
@@ -41,7 +45,7 @@ export function timestamp(dateOrOptions?: Date | Options, optionsOrUndefined?: O
 
   const result = [...dateArr, ...(excludeTime ? [] : timeArr), ...(!excludeTime && !excludeMillisecond ? [milliseconds] : [])]
 
-  return result.join('')
+  return result.join(separator)
 }
 
 export default timestamp

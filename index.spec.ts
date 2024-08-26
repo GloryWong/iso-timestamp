@@ -17,9 +17,15 @@ describe('timestamp', () => {
     expect(result).toMatch(/^\d{8}$/)
   })
 
-  it('should return the respect string with the customized Date value', () => {
+  it('should return the respect timestamp with a custom Date value', () => {
     vi.setSystemTime('2050-03-04T12:03:04.123')
     const result = timestamp(new Date(), { excludeMillisecond: true })
     expect(result).toBe('20500304120304')
+  })
+
+  it('should return a timestamp with a custom separator', () => {
+    const separator = '-'
+    const result = timestamp({ separator })
+    expect(result).toMatch(new RegExp(['^\\d{4}', '\\d{2}', '\\d{2}', '\\d{2}', '\\d{2}', '\\d{2}', '\\d{3}$'].join(separator)))
   })
 })
