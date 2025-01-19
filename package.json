@@ -49,13 +49,13 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@tsconfig/node18": "^18.2.4",
-    "@types/node": "18.19.68",
+    "@types/node": "18.19.71",
     "@vitest/coverage-istanbul": "^2.1.8",
-    "eslint": "^9.17.0",
-    "lint-staged": "^15.2.11",
+    "eslint": "^9.18.0",
+    "lint-staged": "^15.4.1",
     "simple-git-hooks": "^2.11.1",
-    "type-fest": "^4.31.0",
-    "typescript": "^5.7.2",
+    "type-fest": "^4.32.0",
+    "typescript": "^5.7.3",
     "vitest": "^2.1.8"
   },
   "simple-git-hooks": {
