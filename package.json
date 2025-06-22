@@ -45,18 +45,18 @@
     "coverage": "vitest run --coverage.enabled"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.14.1",
+    "@antfu/eslint-config": "^4.15.0",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@tsconfig/node18": "^18.2.4",
-    "@types/node": "18.19.111",
-    "@vitest/coverage-istanbul": "^3.2.3",
-    "eslint": "^9.28.0",
+    "@types/node": "18.19.112",
+    "@vitest/coverage-istanbul": "^3.2.4",
+    "eslint": "^9.29.0",
     "lint-staged": "^15.5.2",
     "simple-git-hooks": "^2.13.0",
     "type-fest": "^4.41.0",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.3"
+    "vitest": "^3.2.4"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm commitlint --edit ${1}",
