@@ -51,7 +51,7 @@
     "@tsconfig/node18": "^18.2.4",
     "@types/node": "18.19.123",
     "@vitest/coverage-istanbul": "^3.2.4",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "lint-staged": "^15.5.2",
     "simple-git-hooks": "^2.13.1",
     "type-fest": "^4.41.0",
